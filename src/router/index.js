@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../components/Login.vue'
 import Home from '../components/Home.vue'
-
 import '../assets/css/global.css'
 import '../assets/fonts/iconfont.css'
 

@@ -3,7 +3,7 @@
   <div class="login_box">
     <!-- 头像区域 -->
     <div class="avatar_box">
-      <img src="../assets/logo.png" alt="">
+      <img src="../assets/X1.jpeg" alt="">
     </div>
     <!-- 登陆表单区域 -->
 <el-form ref="loginFormRef" :model="loginForm" label-width="0px" class="login_form" :rules="loginFormRules">
@@ -57,7 +57,8 @@ export default {
         console.log(vali);
         if(!vali) return 
   const {data:res} = await  this.$http.post('login',this.loginForm)
-  // console.log(res);
+  console.log(this);
+  console.log(res);
   if(res.meta.status !==200) return this.$message.error('登陆失败');
   this.$message.success('登陆成功');
   window.sessionStorage.setItem('token',res.data.token)
@@ -69,7 +70,8 @@ export default {
 </script>
 <style lang="less" scoped>
 .login_container{
-  background-color: #2b4b6b;
+  background:url(../assets/x4.jpg) no-repeat;
+  background-size: cover;
   height: 100%;
 }
 .login_box{
