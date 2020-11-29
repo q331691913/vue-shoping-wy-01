@@ -24,7 +24,6 @@
   </div>
 </div>
 </template>
-
 <script>
 export default {
   data(){
@@ -54,11 +53,11 @@ export default {
     },
     login(){
       this.$refs.loginFormRef.validate(async vali=>{
-        console.log(vali);
+        // console.log(vali);
         if(!vali) return 
   const {data:res} = await  this.$http.post('login',this.loginForm)
-  console.log(this);
-  console.log(res);
+  // console.log(this);
+  // console.log(res);
   if(res.meta.status !==200) return this.$message.error('登陆失败');
   this.$message.success('登陆成功');
   window.sessionStorage.setItem('token',res.data.token)
