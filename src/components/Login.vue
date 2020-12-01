@@ -80,7 +80,10 @@ export default {
   transform: translate(-50%,-50%);
   width: 450px;
   height: 300px;
-  background-color: #fff;
+  // background-color: #fff;
+  background: url(../assets/小猫猫.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 5px;
   border-radius: 3px;
   .avatar_box{
     position: absolute;

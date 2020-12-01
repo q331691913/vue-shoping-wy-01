@@ -4,6 +4,12 @@ import Login from '../components/Login.vue'
 import Home from '../components/Home.vue'
 import Welcome from '../components/Welcome.vue'
 import Users from '../components/Users.vue'
+import Rights from '../components/power/Rights.vue'
+import Roles from '../components/power/Roles.vue'
+import Cate from '../components/goods/Cate.vue'
+
+
+
 
 
 import '../assets/css/global.css'
@@ -22,6 +28,11 @@ const router = new VueRouter({
                     { path: '/home', redirect: '/welcome' },
                     { path: '/welcome', component: Welcome },
                     { path: '/users', component: Users },
+                    { path: '/rights', component: Rights },
+                    { path: '/roles', component: Roles },
+                    { path: '/categories', component: Cate },
+
+
                 ]
             },
 
