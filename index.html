@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        
+        .box2 {
+            width: 100px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <button class="btn1">点击</button>
+    <script>
+        let b1 = document.querySelector('.box1')
+        let b2 = document.querySelector('.box2')
+        let btn = document.querySelector('.btn1')
+        let h1 = b1.offsetHeight
+        let h2 = b2.offsetHeight
+        console.log(h1, h2);
+        btn.addEventListener('click', function() {
+            if (h1 < h2) {
+                b1.style.height = h2 + 'px'
+            }
+            if (h1 > h2) {
+                b2.style.height = h1 + 'px'
+            }
+        })
+    </script>
+</body>
+
+</html>

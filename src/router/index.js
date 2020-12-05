@@ -10,15 +10,12 @@ import Cate from '../components/goods/Cate.vue'
 import Paramas from '../components/goods/Paramas.vue'
 import List from '../components/goods/List.vue'
 import Add from '../components/goods/Add.vue'
-
-
-
+import Order from '../components/order/Order.vue'
 
 import '../assets/css/global.css'
 import '../assets/fonts/iconfont.css'
 
 Vue.use(VueRouter)
-
 const router = new VueRouter({
         routes: [
             { path: '/', redirect: '/login' },
@@ -35,7 +32,9 @@ const router = new VueRouter({
                     { path: '/categories', component: Cate },
                     { path: '/params', component: Paramas },
                     { path: '/goods', component: List },
-                    { path: '/goods/add', component: Add }
+                    { path: '/goods/add', component: Add },
+                    { path: '/orders', component: Order },
+
 
 
 

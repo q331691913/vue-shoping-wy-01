@@ -47,3 +47,15 @@ body,
 .el-tag {
     margin: 10px !important;
 }
+
+.input-new-tag {
+    width: 120px;
+}
+
+.el-steps {
+    margin: 15px 0 !important;
+}
+
+.el-step__title {
+    font-size: 13px;
+}
